@@ -1,31 +1,42 @@
-/* Write your CSS here */
-.nav-container {
+.navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-.nav-content {
+
+.navbar-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1110;
-  padding: 40px 0px;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1110px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.website-logo-img {
-  width: 50px;
-  height: 50px;
+
+@media screen and (min-width: 768px) {
+  .navbar-content {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
-.theme-img {
-  width: 50px;
-  height: 50px;
+
+.navbar-bg-dark {
+  background-color: #333333;
 }
-.theme-button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
+
+.navbar-bg-light {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+  box-shadow: 0px 0px 0px 1px #dcdcdc;
 }
-.list-menu {
+
+.website-logo {
+  height: 48px;
+  margin-left: 12px;
+}
+
+.nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,26 +45,37 @@
   padding: 0px;
   margin: 0px;
 }
-.list-item {
+
+.nav-menu-item {
   width: 100%;
-  padding: 12px 15px;
-}
-.nav-link {
-  font-family: roboto;
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-}
-.nav-bg-dark {
-  background-color: #333333;
-}
-.nav-bg-light {
-  background-color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.nav-link-dark {
-  color: #333333;
+.list-text-light-theme {
+  color: #171f46;
 }
-.nav-link-light {
+
+.list-text-dark-theme {
   color: #ffffff;
+}
+
+.nav-link {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.theme-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.theme-image {
+  height: 32px;
 }

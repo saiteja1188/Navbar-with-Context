@@ -1,4 +1,3 @@
-// Write your code here
 import ThemeContext from '../../context/ThemeContext'
 
 import Navbar from '../Navbar'
@@ -10,26 +9,26 @@ const About = () => (
     {value => {
       const {isDarkTheme} = value
 
-      const homeBgClassName = isDarkTheme ? 'home-bg-dark' : 'home-bg-light'
+      const aboutBgClassName = isDarkTheme ? 'about-bg-dark' : 'about-bg-light'
 
-      const homeTextClassName = isDarkTheme
-        ? 'home-text-light'
-        : 'home-text-dark'
-
-      const homeImageUrl = isDarkTheme
+      const aboutImageURL = isDarkTheme
         ? 'https://assets.ccbp.in/frontend/react-js/about-dark-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/about-light-img.png'
 
+      const aboutTextClassName = isDarkTheme
+        ? 'about-text-light'
+        : 'about-text-dark'
+
       return (
-        <>
-          <div className={`home-app-container ${homeBgClassName}`}>
-            <Navbar />
-            <div className="response-container">
-              <img src={homeImageUrl} alt="about" className="home-image" />
-              <h1 className={`home-heading ${homeTextClassName}`}>About</h1>
+        <div className={`about-app-container ${aboutBgClassName}`}>
+          <Navbar />
+          <div className="about-page-container">
+            <div className="about-container">
+              <img className="about-image" src={aboutImageURL} alt="about" />
+              <h1 className={`about-heading ${aboutTextClassName}`}>About</h1>
             </div>
           </div>
-        </>
+        </div>
       )
     }}
   </ThemeContext.Consumer>

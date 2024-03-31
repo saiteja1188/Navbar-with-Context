@@ -1,35 +1,51 @@
-/* Write your CSS here */
-.home-app-container {
+.about-app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-.response-container {
+
+.about-bg-dark {
+  background-color: #000000;
+}
+
+.about-bg-light {
+  background-color: #ffffff;
+}
+
+.about-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
   height: 100%;
 }
-.home-bg-dark {
-  background-color: #000000;
-}
-.home-bg-light {
-  background-color: #ffffff;
+
+.about-image {
+  height: 124px;
 }
 
-.home-image {
-  width: 200px;
+.about-heading {
+  font-family: 'Roboto';
+  font-size: 32px;
 }
-.home-heading {
-  font-family: roboto;
-  font-size: 36px;
-  font-weight: 500;
+
+@media screen and (min-width: 768px) {
+  .about-heading {
+    font-size: 48px;
+  }
 }
-.home-text-dark {
-  color: #1e293b;
-}
-.home-text-light {
+
+.about-text-light {
   color: #ffffff;
+}
+
+.about-text-dark {
+  color: #1e293b;
 }
