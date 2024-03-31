@@ -1,0 +1,35 @@
+/* Write your CSS here */
+.home-app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.response-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+}
+.home-bg-dark {
+  background-color: #000000;
+}
+.home-bg-light {
+  background-color: #ffffff;
+}
+
+.home-image {
+  width: 200px;
+}
+.home-heading {
+  font-family: roboto;
+  font-size: 36px;
+  font-weight: 500;
+}
+.home-text-dark {
+  color: #1e293b;
+}
+.home-text-light {
+  color: #ffffff;
+}
